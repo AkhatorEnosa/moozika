@@ -4,7 +4,7 @@ const Player = ({enterSite}) => {
   return (
     <div className="container sm:w-[70vw] md:w-[70vw] lg:w-[28vw] h-[75vh] bg-white flex flex-col justify-between items-center overflow-hidden rounded-2xl p-5 shadow-sm opacity-0 scale-75">
         <div className="header w-full flex justify-between items-center">
-            <h2 className="logo font-bold opacity-0">Moozika</h2>
+            <h2 className="logo font-bold opacity-0">Mooziker</h2>
             <div className="double-dot flex gap-1 text-[#e5e5e5f4] opacity-0">
                 <FaCircle />
                 <FaCircle />
