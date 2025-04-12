@@ -5,3 +5,6 @@
 .play {
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }
+.rewind:hover {
+  color: var(--hover-color);
+}
