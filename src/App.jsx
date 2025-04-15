@@ -18,7 +18,7 @@ function App() {
       tl.to(".container", {
         // transform: "scale(1)",
         opacity: 1,
-        duration: 0.5
+        duration: 1
       }).to(".double-dot", {
         opacity: 1
       }).to(".music-art", {
@@ -29,13 +29,14 @@ function App() {
         opacity: 1,
         delay: -0.5
       })
-      .to(".play", {
-        opacity: 1,
-        delay: -0.8
-      }).to(".rewind, .forward", {
-        opacity: 1,
-        delay: -0.2
-      }).to(".music-bar", {
+      // .to(".play", {
+      //   opacity: 1,
+      //   delay: -0.8
+      // }).to(".rewind, .forward", {
+      //   opacity: 1,
+      //   delay: -0.2
+      // })
+      .to(".music-bar", {
         opacity: 1
       }).fromTo(".progress", {
         width: "0%"
@@ -44,25 +45,13 @@ function App() {
       }).to(".progress", {
         width: "100%",
         delay: 0.6
-      }).to(".play", {
-        rotate: "360deg",
-        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-        duration: 0.2
-      }).to(".play", {
-        backgroundColor: "#fa5454",
-        width: "30%",
-        height: "100%",
-        borderRadius: "20px"
-      }).fromTo(".play p", {
-        opacity: 0
-      }, {
+      }).to(".controls", {
+        scale: 1,
         opacity: 1,
-        repeat: -1,
-        yoyo: true,
+        duration: 0.5,
       }).to(".music-art-text", {
         opacity: 1,
         duration: 0.5,
-        delay: -1
       })
   })
 
